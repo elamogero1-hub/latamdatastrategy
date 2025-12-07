@@ -1,46 +1,47 @@
 import { Award, ExternalLink } from "lucide-react";
 
-{
-  name: "Google Cloud Professional Data Engineer",
+const certifications = [
+  {
+    name: "Google Cloud Professional Data Engineer",
     provider: "Google Cloud",
-      year: "2024",
-        color: "from-blue-500/20 to-green-500/20",
-          borderColor: "border-blue-500/30",
+    year: "2024",
+    color: "from-blue-500/20 to-green-500/20",
+    borderColor: "border-blue-500/30",
   },
-{
-  name: "Google Cloud Professional Data Architect",
+  {
+    name: "Google Cloud Professional Data Architect",
     provider: "Google Cloud",
-      year: "2024",
-        color: "from-blue-500/20 to-yellow-500/20",
-          borderColor: "border-blue-500/30",
+    year: "2024",
+    color: "from-blue-500/20 to-yellow-500/20",
+    borderColor: "border-blue-500/30",
   },
-{
-  name: "Azure Data Engineer",
+  {
+    name: "Azure Data Engineer",
     provider: "Microsoft Azure",
-      year: "2023",
-        color: "from-cyan-500/20 to-blue-500/20",
-          borderColor: "border-cyan-500/30",
+    year: "2023",
+    color: "from-cyan-500/20 to-blue-500/20",
+    borderColor: "border-cyan-500/30",
   },
-{
-  name: "Databricks Lakehouse",
+  {
+    name: "Databricks Lakehouse",
     provider: "Databricks",
-      year: "2023",
-        color: "from-red-500/20 to-orange-500/20",
-          borderColor: "border-red-500/30",
+    year: "2023",
+    color: "from-red-500/20 to-orange-500/20",
+    borderColor: "border-red-500/30",
   },
-{
-  name: "Digital Leader",
+  {
+    name: "Digital Leader",
     provider: "Google Cloud",
-      year: "2023",
-        color: "from-green-500/20 to-teal-500/20",
-          borderColor: "border-green-500/30",
+    year: "2023",
+    color: "from-green-500/20 to-teal-500/20",
+    borderColor: "border-green-500/30",
   },
-{
-  name: "Azure Fundamentals AI",
+  {
+    name: "Azure Fundamentals AI",
     provider: "Microsoft Azure",
-      year: "2024",
-        color: "from-blue-600/20 to-purple-600/20",
-          borderColor: "border-blue-600/30",
+    year: "2024",
+    color: "from-blue-600/20 to-purple-600/20",
+    borderColor: "border-blue-600/30",
   },
 ];
 
