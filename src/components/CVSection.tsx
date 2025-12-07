@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 const highlights = [
   "10+ años de experiencia en Data & Analytics",
   "Liderazgo de equipos multidisciplinarios",
-  "Proyectos en Fortune 500 companies",
+
   "Speaker en conferencias tech",
 ];
 

@@ -25,8 +25,8 @@ export const Navigation = () => {
   return (
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${isScrolled
-          ? "bg-background/80 backdrop-blur-xl border-b border-border/50 py-3"
-          : "bg-transparent py-6"
+        ? "bg-background/80 backdrop-blur-xl border-b border-border/50 py-3"
+        : "bg-transparent py-6"
         }`}
     >
       <div className="container mx-auto px-4 flex items-center justify-between">
@@ -38,7 +38,7 @@ export const Navigation = () => {
             <Database className="w-5 h-5 text-primary" />
           </div>
           <span className="hidden sm:inline">
-            Data<span className="text-primary">Hub</span>
+            Carlos <span className="text-primary">Linares</span>
           </span>
         </a>
 

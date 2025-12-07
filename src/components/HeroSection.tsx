@@ -19,7 +19,7 @@ export const HeroSection = () => {
         <div className="max-w-4xl mx-auto text-center">
           {/* Profile Photo */}
           <div className="mb-8 relative inline-block animate-fade-up">
-            <div className="relative w-32 h-32 md:w-40 md:h-40 group">
+            <div className="relative w-48 h-48 md:w-64 md:h-64 group">
               {/* LED Glow Effect */}
               <div className="absolute inset-0 rounded-full bg-gradient-to-r from-primary via-secondary to-accent blur-md opacity-75 group-hover:opacity-100 transition-opacity duration-500 animate-pulse-glow" />
 

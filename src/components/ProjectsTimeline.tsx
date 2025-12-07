@@ -33,7 +33,7 @@ const sessions = [
   },
   {
     number: 5,
-    title: "Data Governance",
+    title: "Databricks Data Governance",
     description: "Unity Catalog, lineage y políticas de acceso a datos.",
     technologies: ["Unity Catalog", "Purview", "Collibra"],
     github: "https://github.com",
@@ -123,11 +123,7 @@ export const ProjectsTimeline = () => {
               {/* Card Header */}
               <div className="p-6 pb-4">
                 <div className="flex items-center justify-between mb-4">
-                  <span className="flex items-center gap-2 text-xs font-mono text-primary">
-                    <span className="px-2 py-1 rounded bg-primary/10">
-                      Sesión {session.number.toString().padStart(2, "0")}
-                    </span>
-                  </span>
+
                   <a
                     href={session.github}
                     target="_blank"
