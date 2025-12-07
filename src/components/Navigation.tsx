@@ -24,11 +24,10 @@ export const Navigation = () => {
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
-        isScrolled
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${isScrolled
           ? "bg-background/80 backdrop-blur-xl border-b border-border/50 py-3"
           : "bg-transparent py-6"
-      }`}
+        }`}
     >
       <div className="container mx-auto px-4 flex items-center justify-between">
         <a
@@ -55,12 +54,7 @@ export const Navigation = () => {
               <span className="absolute bottom-0 left-1/2 -translate-x-1/2 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-3/4" />
             </a>
           ))}
-          <Button
-            asChild
-            className="ml-4 bg-primary hover:bg-primary/90 text-primary-foreground font-medium"
-          >
-            <a href="#contacto">Contactar</a>
-          </Button>
+
         </div>
 
         {/* Mobile Menu Button */}
@@ -87,14 +81,7 @@ export const Navigation = () => {
                 {link.label}
               </a>
             ))}
-            <Button
-              asChild
-              className="mt-2 bg-primary hover:bg-primary/90 text-primary-foreground font-medium"
-            >
-              <a href="#contacto" onClick={() => setIsMobileMenuOpen(false)}>
-                Contactar
-              </a>
-            </Button>
+
           </div>
         </div>
       )}
