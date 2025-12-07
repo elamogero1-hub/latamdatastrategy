@@ -19,13 +19,19 @@ export const HeroSection = () => {
         <div className="max-w-4xl mx-auto text-center">
           {/* Profile Photo */}
           <div className="mb-8 relative inline-block animate-fade-up">
-            <div className="w-32 h-32 md:w-40 md:h-40 rounded-full p-1 bg-gradient-to-br from-primary via-secondary to-accent">
-              <div className="w-full h-full rounded-full overflow-hidden bg-background border-4 border-background relative">
-                <img
-                  src="/images/profile.jpg"
-                  alt="Profile"
-                  className="w-full h-full object-cover"
-                />
+            <div className="relative w-32 h-32 md:w-40 md:h-40 group">
+              {/* LED Glow Effect */}
+              <div className="absolute inset-0 rounded-full bg-gradient-to-r from-primary via-secondary to-accent blur-md opacity-75 group-hover:opacity-100 transition-opacity duration-500 animate-pulse-glow" />
+
+              {/* Image Container */}
+              <div className="relative w-full h-full rounded-full p-[3px] bg-gradient-to-r from-primary via-secondary to-accent">
+                <div className="w-full h-full rounded-full overflow-hidden bg-background relative z-10">
+                  <img
+                    src="/images/profile.jpg"
+                    alt="Profile"
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                  />
+                </div>
               </div>
             </div>
           </div>
