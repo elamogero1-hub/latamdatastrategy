@@ -22,7 +22,7 @@ export const HeroSection = () => {
             <div className="w-32 h-32 md:w-40 md:h-40 rounded-full p-1 bg-gradient-to-br from-primary via-secondary to-accent">
               <div className="w-full h-full rounded-full overflow-hidden bg-background border-4 border-background relative">
                 <img
-                  src="/images/profile.png"
+                  src="/images/profile.jpg"
                   alt="Profile"
                   className="w-full h-full object-cover"
                 />
