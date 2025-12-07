@@ -49,7 +49,7 @@ export const TechStackSection = () => {
                 className="glass-card px-10 py-8 rounded-2xl hover:scale-105 transition-all duration-300 hover:shadow-glow animate-fade-up group cursor-default flex flex-col items-center gap-4"
                 style={{ animationDelay: `${index * 100}ms` }}
               >
-                <div className="h-16 w-16 relative flex items-center justify-center">
+                <div className="h-24 w-24 md:h-32 md:w-32 relative flex items-center justify-center">
                   <img
                     src={provider.logo}
                     alt={provider.name}
