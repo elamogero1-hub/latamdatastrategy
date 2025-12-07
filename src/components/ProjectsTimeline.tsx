@@ -2,14 +2,7 @@ import { Github, ExternalLink, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const sessions = [
-  {
-    number: 0,
-    title: "Introducción al Ecosistema",
-    description: "Setup inicial con Lovable AI, GitHub y Vercel para desarrollo moderno.",
-    technologies: ["Lovable AI", "GitHub", "Vercel"],
-    github: "https://github.com",
-    featured: true,
-  },
+
   {
     number: 1,
     title: "Fundamentos de Databricks",
@@ -114,7 +107,7 @@ export const ProjectsTimeline = () => {
             <span className="gradient-text">Proyectos Prácticos</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Desde fundamentos hasta implementaciones avanzadas, cada proyecto 
+            Desde fundamentos hasta implementaciones avanzadas, cada proyecto
             representa aprendizaje hands-on con tecnologías de vanguardia.
           </p>
         </div>
@@ -124,9 +117,7 @@ export const ProjectsTimeline = () => {
           {sessions.map((session, index) => (
             <div
               key={session.number}
-              className={`group glass-card rounded-2xl overflow-hidden hover:scale-[1.02] transition-all duration-300 animate-fade-up ${
-                session.featured ? "md:col-span-2 lg:col-span-1 ring-2 ring-primary/50" : ""
-              }`}
+              className="group glass-card rounded-2xl overflow-hidden hover:scale-[1.02] transition-all duration-300 animate-fade-up"
               style={{ animationDelay: `${index * 50}ms` }}
             >
               {/* Card Header */}
@@ -136,12 +127,6 @@ export const ProjectsTimeline = () => {
                     <span className="px-2 py-1 rounded bg-primary/10">
                       Sesión {session.number.toString().padStart(2, "0")}
                     </span>
-                    {session.featured && (
-                      <span className="flex items-center gap-1 px-2 py-1 rounded bg-accent/20 text-accent">
-                        <Sparkles className="w-3 h-3" />
-                        Intro
-                      </span>
-                    )}
                   </span>
                   <a
                     href={session.github}

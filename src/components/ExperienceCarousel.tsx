@@ -4,7 +4,7 @@ const companies = [
   { name: "Microsoft", color: "from-blue-600 to-cyan-500" },
   { name: "Databricks", color: "from-red-500 to-orange-500" },
   { name: "Snowflake", color: "from-cyan-400 to-blue-500" },
-  { name: "Accenture", color: "from-purple-500 to-violet-600" },
+
   { name: "Deloitte", color: "from-green-500 to-emerald-600" },
   { name: "IBM", color: "from-blue-700 to-blue-500" },
 ];

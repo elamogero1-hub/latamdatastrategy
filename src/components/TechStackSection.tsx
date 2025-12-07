@@ -1,10 +1,8 @@
 import { Cloud, Database, Brain, BarChart3, Server, Workflow } from "lucide-react";
 
-const cloudProviders = [
-  { name: "AWS", gradient: "from-orange-500 to-yellow-500" },
-  { name: "Google Cloud", gradient: "from-blue-500 to-green-500" },
-  { name: "Azure", gradient: "from-blue-600 to-cyan-500" },
-];
+{ name: "AWS", logo: "/images/aws-logo.svg", gradient: "from-orange-500 to-yellow-500" },
+{ name: "Google Cloud", logo: "/images/google-cloud-logo.svg", gradient: "from-blue-500 to-green-500" },
+{ name: "Azure", logo: "/images/azure-logo.svg", gradient: "from-blue-600 to-cyan-500" },
 
 const specialties = [
   { name: "Big Data", icon: Database, color: "text-blue-400" },
@@ -42,14 +40,21 @@ export const TechStackSection = () => {
           <h3 className="text-center text-lg font-semibold text-muted-foreground mb-8">
             Cloud Providers
           </h3>
-          <div className="flex flex-wrap justify-center gap-6">
+          <div className="flex flex-wrap justify-center gap-8">
             {cloudProviders.map((provider, index) => (
               <div
                 key={provider.name}
-                className="glass-card px-10 py-8 rounded-2xl hover:scale-105 transition-all duration-300 hover:shadow-glow animate-fade-up group cursor-default"
+                className="glass-card px-10 py-8 rounded-2xl hover:scale-105 transition-all duration-300 hover:shadow-glow animate-fade-up group cursor-default flex flex-col items-center gap-4"
                 style={{ animationDelay: `${index * 100}ms` }}
               >
-                <div className={`text-3xl font-bold bg-gradient-to-r ${provider.gradient} bg-clip-text text-transparent group-hover:scale-110 transition-transform`}>
+                <div className="h-16 w-16 relative flex items-center justify-center">
+                  <img
+                    src={provider.logo}
+                    alt={provider.name}
+                    className="w-full h-full object-contain filter group-hover:brightness-110 transition-all duration-300"
+                  />
+                </div>
+                <div className={`text-xl font-bold bg-gradient-to-r ${provider.gradient} bg-clip-text text-transparent`}>
                   {provider.name}
                 </div>
               </div>
