@@ -69,6 +69,24 @@ export const ContactSection = () => {
                 Conectemos
               </h3>
               <div className="space-y-6">
+                <a
+                  href="https://wa.me/51991155704"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-4 p-4 rounded-xl hover:bg-muted/50 transition-colors group"
+                >
+                  <div className="p-3 rounded-xl bg-[#25D366]/20">
+                    <MessageCircle className="w-6 h-6 text-[#25D366]" />
+                  </div>
+                  <div>
+                    <p className="font-medium text-foreground group-hover:text-primary transition-colors">
+                      WhatsApp
+                    </p>
+                    <p className="text-sm text-muted-foreground">
+                      Chat directo
+                    </p>
+                  </div>
+                </a>
 
 
                 <a
