@@ -37,9 +37,17 @@ export const Navigation = () => {
           <div className="p-2 rounded-lg bg-primary/10 border border-primary/20 group-hover:bg-primary/20 transition-colors">
             <Database className="w-5 h-5 text-primary" />
           </div>
-          <span className="hidden sm:inline">
-            Carlos <span className="text-primary">Linares</span>
-          </span>
+          <div className="flex flex-col items-start">
+            <span className="hidden sm:inline">
+              Carlos <span className="text-primary">Linares</span>
+            </span>
+            <div className="flex items-center gap-1 mt-0.5">
+              <img src="/images/hand.gif" alt="👋" className="w-4 h-4 mix-blend-multiply dark:mix-blend-screen" />
+              <span className="text-[10px] font-medium text-muted-foreground">
+                Bienvenidos a mi mundo <span className="text-primary font-bold">#DataLovers</span>
+              </span>
+            </div>
+          </div>
         </a>
 
         {/* Desktop Navigation */}

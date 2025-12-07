@@ -27,13 +27,7 @@ export const HeroSection = () => {
 
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
-          {/* Welcome Badge */}
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-card mb-8 animate-fade-up">
-            <img src="/images/hand.gif" alt="👋" className="w-6 h-6" />
-            <span className="text-sm font-medium text-foreground">
-              Bienvenidos a mi mundo <span className="text-primary font-bold">#DataLovers</span>
-            </span>
-          </div>
+
 
           {/* Profile Photo */}
           <div className="mb-8 relative inline-block animate-fade-up">
