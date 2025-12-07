@@ -85,6 +85,7 @@ export default {
         shimmer: "shimmer 2s linear infinite",
         float: "float 3s ease-in-out infinite",
         "border-glow": "border-glow 3s ease-in-out infinite",
+        "scroll-x": "scroll-x 30s linear infinite",
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",

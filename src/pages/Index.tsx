@@ -1,25 +1,29 @@
 import { Navigation } from "@/components/Navigation";
 import { HeroSection } from "@/components/HeroSection";
-import { AboutSection } from "@/components/AboutSection";
-import { ProjectsSection } from "@/components/ProjectsSection";
+import { WhyTechnicalSection } from "@/components/WhyTechnicalSection";
+import { TechStackSection } from "@/components/TechStackSection";
+import { ProjectsTimeline } from "@/components/ProjectsTimeline";
+import { ExperienceCarousel } from "@/components/ExperienceCarousel";
 import { CertificationsSection } from "@/components/CertificationsSection";
 import { CVSection } from "@/components/CVSection";
 import { ContactSection } from "@/components/ContactSection";
 import { Footer } from "@/components/Footer";
+import { FloatingButtons } from "@/components/FloatingButtons";
 
 const Index = () => {
   return (
     <div className="min-h-screen bg-background text-foreground">
       <Navigation />
-      <main>
-        <HeroSection />
-        <AboutSection />
-        <ProjectsSection />
-        <CertificationsSection />
-        <CVSection />
-        <ContactSection />
-      </main>
+      <HeroSection />
+      <WhyTechnicalSection />
+      <TechStackSection />
+      <ProjectsTimeline />
+      <ExperienceCarousel />
+      <CertificationsSection />
+      <CVSection />
+      <ContactSection />
       <Footer />
+      <FloatingButtons />
     </div>
   );
 };

@@ -1,4 +1,4 @@
-import { ArrowRight, Github, Linkedin, Mail } from "lucide-react";
+import { ArrowRight, Download, MessageCircle, Github, Linkedin, Mail } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 export const HeroSection = () => {
@@ -21,28 +21,39 @@ export const HeroSection = () => {
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-card mb-8 animate-fade-up">
             <span className="w-2 h-2 rounded-full bg-accent animate-pulse" />
             <span className="text-sm text-muted-foreground font-medium">
-              Disponible para nuevos proyectos
+              Head of Data & Analytics | Master en Data Management
             </span>
           </div>
 
           {/* Main Title */}
-          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6 animate-fade-up delay-100">
-            <span className="text-foreground">Head of </span>
-            <span className="gradient-text">Data & Analytics</span>
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-6 animate-fade-up delay-100 leading-tight">
+            <span className="text-foreground">El Liderazgo Técnico en </span>
+            <span className="gradient-text">Data No Negocia</span>
           </h1>
 
           {/* Subtitle */}
-          <p className="text-lg sm:text-xl md:text-2xl text-muted-foreground mb-4 animate-fade-up delay-200 font-light">
-            AI & Cloud Architecture
+          <p className="text-lg sm:text-xl md:text-2xl text-primary mb-4 animate-fade-up delay-200 font-semibold">
+            Data Leaders Need to Stay Technical
           </p>
 
           {/* Value Proposition */}
-          <p className="text-base sm:text-lg text-muted-foreground/80 max-w-2xl mx-auto mb-10 animate-fade-up delay-300 leading-relaxed">
-            Transformando empresas en organizaciones{" "}
-            <span className="text-primary font-medium">Data-Driven</span> mediante
-            arquitecturas de datos escalables, inteligencia artificial y soluciones cloud
-            de vanguardia.
+          <p className="text-base sm:text-lg text-muted-foreground/80 max-w-2xl mx-auto mb-6 animate-fade-up delay-300 leading-relaxed">
+            Los líderes de datos que mantienen experiencia práctica, no solo visión estratégica, 
+            son quienes realmente transforman organizaciones en la era de la{" "}
+            <span className="text-primary font-medium">Inteligencia Artificial</span>.
           </p>
+
+          {/* Expertise Tags */}
+          <div className="flex flex-wrap items-center justify-center gap-2 mb-10 animate-fade-up delay-350">
+            {["AI", "ML", "Cloud", "Data Architecture", "Big Data", "Analytics"].map((tag) => (
+              <span
+                key={tag}
+                className="px-3 py-1 text-xs font-medium rounded-full bg-primary/10 text-primary border border-primary/20"
+              >
+                {tag}
+              </span>
+            ))}
+          </div>
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12 animate-fade-up delay-400">
@@ -51,18 +62,22 @@ export const HeroSection = () => {
               size="lg"
               className="w-full sm:w-auto bg-primary hover:bg-primary/90 text-primary-foreground font-semibold px-8 py-6 text-lg group"
             >
-              <a href="#proyectos">
-                Ver Proyectos
-                <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
+              <a href="#cv">
+                <Download className="mr-2 w-5 h-5" />
+                Descarga mi CV
               </a>
             </Button>
             <Button
               asChild
               size="lg"
               variant="outline"
-              className="w-full sm:w-auto border-border/50 bg-muted/30 hover:bg-muted/50 text-foreground font-semibold px-8 py-6 text-lg"
+              className="w-full sm:w-auto border-primary/50 bg-primary/10 hover:bg-primary/20 text-foreground font-semibold px-8 py-6 text-lg group"
             >
-              <a href="#contacto">Contactar</a>
+              <a href="#contacto">
+                <MessageCircle className="mr-2 w-5 h-5" />
+                Hablemos de Data
+                <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
+              </a>
             </Button>
           </div>
 
