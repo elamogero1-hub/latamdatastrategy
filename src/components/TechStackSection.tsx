@@ -1,8 +1,10 @@
 import { Cloud, Database, Brain, BarChart3, Server, Workflow } from "lucide-react";
 
-{ name: "AWS", logo: "/images/aws-logo.svg", gradient: "from-orange-500 to-yellow-500" },
-{ name: "Google Cloud", logo: "/images/google-cloud-logo.svg", gradient: "from-blue-500 to-green-500" },
-{ name: "Azure", logo: "/images/azure-logo.svg", gradient: "from-blue-600 to-cyan-500" },
+const cloudProviders = [
+  { name: "AWS", logo: "/images/aws-logo.svg", gradient: "from-orange-500 to-yellow-500" },
+  { name: "Google Cloud", logo: "/images/google-cloud-logo.svg", gradient: "from-blue-500 to-green-500" },
+  { name: "Azure", logo: "/images/azure-logo.svg", gradient: "from-blue-600 to-cyan-500" },
+];
 
 const specialties = [
   { name: "Big Data", icon: Database, color: "text-blue-400" },
