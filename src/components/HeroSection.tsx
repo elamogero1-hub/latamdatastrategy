@@ -9,7 +9,7 @@ export const HeroSection = () => {
     >
       {/* Animated Background */}
       <div className="absolute inset-0 tech-grid opacity-30" />
-      
+
       {/* Floating Orbs */}
       <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/20 rounded-full blur-[120px] floating animate-pulse-glow" />
       <div className="absolute bottom-1/4 right-1/4 w-80 h-80 bg-secondary/20 rounded-full blur-[100px] floating-delayed animate-pulse-glow" />
@@ -18,12 +18,7 @@ export const HeroSection = () => {
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
           {/* Badge */}
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-card mb-8 animate-fade-up">
-            <span className="w-2 h-2 rounded-full bg-accent animate-pulse" />
-            <span className="text-sm text-muted-foreground font-medium">
-              Head of Data & Analytics | Master en Data Management
-            </span>
-          </div>
+
 
           {/* Main Title */}
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-6 animate-fade-up delay-100 leading-tight">
@@ -38,7 +33,7 @@ export const HeroSection = () => {
 
           {/* Value Proposition */}
           <p className="text-base sm:text-lg text-muted-foreground/80 max-w-2xl mx-auto mb-6 animate-fade-up delay-300 leading-relaxed">
-            Los líderes de datos que mantienen experiencia práctica, no solo visión estratégica, 
+            Los líderes de datos que mantienen experiencia práctica, no solo visión estratégica,
             son quienes realmente transforman organizaciones en la era de la{" "}
             <span className="text-primary font-medium">Inteligencia Artificial</span>.
           </p>
