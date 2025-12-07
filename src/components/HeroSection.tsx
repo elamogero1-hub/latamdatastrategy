@@ -10,6 +10,16 @@ export const HeroSection = () => {
       {/* Animated Background */}
       <div className="absolute inset-0 tech-grid opacity-30" />
 
+      {/* AI Robot Watermark */}
+      <div className="absolute inset-0 flex items-center justify-center pointer-events-none overflow-hidden z-0">
+        <div className="absolute w-[120%] h-[120%] bg-gradient-to-b from-background via-transparent to-background z-10" />
+        <img
+          src="/images/ai-robot.png"
+          alt=""
+          className="w-full h-full object-cover opacity-[0.07] blur-[2px] animate-pulse-slow scale-105"
+        />
+      </div>
+
       {/* Floating Orbs */}
       <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/20 rounded-full blur-[120px] floating animate-pulse-glow" />
       <div className="absolute bottom-1/4 right-1/4 w-80 h-80 bg-secondary/20 rounded-full blur-[100px] floating-delayed animate-pulse-glow" />
@@ -20,8 +30,12 @@ export const HeroSection = () => {
           {/* Profile Photo */}
           <div className="mb-8 relative inline-block animate-fade-up">
             <div className="relative w-48 h-48 md:w-64 md:h-64 group">
+              {/* Tech Ring Animation */}
+              <div className="absolute -inset-4 rounded-full border border-primary/20 border-dashed animate-[spin_10s_linear_infinite]" />
+              <div className="absolute -inset-4 rounded-full border border-secondary/20 border-dashed animate-[spin_15s_linear_infinite_reverse] scale-90" />
+
               {/* LED Glow Effect */}
-              <div className="absolute inset-0 rounded-full bg-gradient-to-r from-primary via-secondary to-accent blur-md opacity-75 group-hover:opacity-100 transition-opacity duration-500 animate-pulse-glow" />
+              <div className="absolute inset-0 rounded-full bg-gradient-to-r from-primary via-secondary to-accent blur-xl opacity-50 group-hover:opacity-80 transition-opacity duration-500" />
 
               {/* Image Container */}
               <div className="relative w-full h-full rounded-full p-[3px] bg-gradient-to-r from-primary via-secondary to-accent">
@@ -29,7 +43,7 @@ export const HeroSection = () => {
                   <img
                     src="/images/profile.jpg"
                     alt="Profile"
-                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                   />
                 </div>
               </div>
