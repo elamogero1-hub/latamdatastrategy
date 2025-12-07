@@ -17,6 +17,18 @@ export const HeroSection = () => {
 
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
+          {/* Profile Photo */}
+          <div className="mb-8 relative inline-block animate-fade-up">
+            <div className="w-32 h-32 md:w-40 md:h-40 rounded-full p-1 bg-gradient-to-br from-primary via-secondary to-accent">
+              <div className="w-full h-full rounded-full overflow-hidden bg-background border-4 border-background relative">
+                <img
+                  src="/images/profile.png"
+                  alt="Profile"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+            </div>
+          </div>
           {/* Badge */}
 
 
