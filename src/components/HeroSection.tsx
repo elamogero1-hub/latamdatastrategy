@@ -82,7 +82,13 @@ export const HeroSection = () => {
 
           {/* Expertise Tags */}
           <div className="flex flex-wrap items-center justify-center gap-2 mb-10 animate-fade-up delay-350">
-            {["AI", "ML", "Cloud", "Data Architecture", "Big Data", "Analytics"].map((tag) => (
+            {[
+              "Machine Learning e AI",
+              "Gobierno y calidad",
+              "Arquitetura",
+              "Monetización",
+              "Cultura y Gestion del cambio"
+            ].map((tag) => (
               <span
                 key={tag}
                 className="px-3 py-1 text-xs font-medium rounded-full bg-primary/10 text-primary border border-primary/20"
